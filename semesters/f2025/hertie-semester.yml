@@ -1,0 +1,20 @@
+semester: f2025
+org: Hertie-School-Deep-Learning-E1394
+course_code: GRAD-E1394
+course_name: "Deep Learning"
+
+instructors:
+  - github: LynnKaack
+    name: "Lynn Kaack"
+    email: "kaack@hertie-school.org"
+
+teaching_assistants:
+  - github: henrycgbaker
+    name: "Henry Baker"
+    email: "baker@hertie-school.org"
+  - github: chiara-fb
+    name: "Chiara Fusar Bassini"
+    email: "chiara.fusarbassini@hertie-school.org"
+
+auditors: []
+students: []

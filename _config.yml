@@ -1,4 +1,68 @@
-title: "Deep Learning — Fall 2026 (EXAMPLE)"
-description: "Hertie School · Data Science Lab · cohort demo (ADR 0010 PoC)"
-theme: jekyll-theme-minimal
-show_downloads: false
+# ============================================================
+# Hertie DSL Course Website — Configuration
+# ============================================================
+# Edit the fields below for your course.
+# Do NOT change anything below the "Do not change" line.
+
+# --- Course identity ---
+course_name: "Deep Learning (GRAD-E1394)"           # e.g. "Deep Learning (GRAD-E1394)"
+course_description: "Deep learning is the technology behind facial recognition, machine translation, ChatGPT, and many other applications. Students learn the main theoretical concepts of neural networks and get introduced to applications in computer vision, NLP, and policy-relevant areas."
+course_semester: "Fall 2026"
+course_code: "GRAD-E1394"                   # Hertie course code
+github_org: "Deep-Learning-EXAMPLE-f2026"
+
+# --- Instructor / institution ---
+schoolname: "Hertie School"
+schoolurl: "https://hertie-school.org/en/datasciencelab"
+dsl_org_url: "https://github.com/hertie-data-science-lab"
+address: |
+    Data Science Lab
+    Hertie School
+    Friedrichstraße 180
+    10117 Berlin, Germany
+
+# --- Optional ---
+# twitter_username: hertie_dslab
+# google_analytics: UA-XXXXXXXX-X
+
+# --- Content repo (where course materials live) ---
+content_repo: "https://github.com/Hertie-School-Deep-Learning-E1394/content-f2025"
+
+### Do not change the following unless you know what you are doing ###
+
+baseurl: ""
+url: ""
+
+markdown: kramdown
+permalink: blog/:year/:month/:title
+excerpt_separator: "<!--more-->"
+
+include: ['_images', '_css']
+exclude:
+  - develop
+  - hertie-config.yml
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - .bundle
+
+dateformat: "%m/%d/%Y"
+future: true
+
+collections:
+    events:
+        output: true
+    lectures:
+        output: true
+    assignments:
+        output: true
+    announcements:
+        output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: "assignments"
+    values:
+      layout: "assignment"
